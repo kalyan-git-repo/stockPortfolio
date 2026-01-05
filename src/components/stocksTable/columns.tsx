@@ -65,9 +65,16 @@ export const columns: ColumnDef<DataRow, any>[] = [
       // Access the original data for the current row
       const valA: any = row._valuesCache.presentvalue;
       const valB: any = row._valuesCache.investment;
-
+      const refVal: any = row._valuesCache.cmp
+      let difference: any
       // Perform the subtraction
-      const difference = (valA - valB);
+      if (refVal > 1) {
+        difference = (valA - valB);
+      }
+      else{
+        difference = 0
+      }
+      
       const status = (difference !== Math.abs(difference))
       const className = (status === true ? 'text-red-500 font-bold' : 'text-green-500 font-bold');
       
