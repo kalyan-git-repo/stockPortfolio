@@ -26,7 +26,7 @@ const stockSymbolForPrice = {
     Gravita: 'GRAVITA.BO',
     SBILife: 'SBILIFE.BO',
     Infy: 'INFY.BO',
-    HappiestMind: 'HAPPSTMNDS.BO',
+    HappeistMind: 'HAPPSTMNDS.BO',
     Easemytrip: 'EASEMYTRIP.BO'
     }
 
@@ -58,7 +58,7 @@ const stockSymbolForStockData = {
     Gravita: '533282:BOM',
     SBILife: '540719:BOM',
     Infy: '500209:BOM',
-    HappiestMind: '543237:BOM',
+    HappeistMind: '543237:BOM',
     Easemytrip: '543272:BOM'
     }
   
@@ -293,9 +293,36 @@ export const datas = [
     particulars: "SBI Life",
     purchaseprice: 1197,
     quantity: 49,
-    portfoliopercentage: "5%",
+    portfoliopercentage: "4%",
     nseorbse_for_yfinance: stockSymbolForPrice["SBILife"],
     nseorbse_for_puppet: stockSymbolForStockData["SBILife"],
+    latestearnings: "not accessible",
+    },
+    {
+    particulars: "Infy",
+    purchaseprice: 1647,
+    quantity: 36,
+    portfoliopercentage: "4%",
+    nseorbse_for_yfinance: stockSymbolForPrice["Infy"],
+    nseorbse_for_puppet: stockSymbolForStockData["Infy"],
+    latestearnings: "not accessible",
+    },
+    {
+    particulars: "Happeist Mind",
+    purchaseprice: 1103,
+    quantity: 45,
+    portfoliopercentage: "3%",
+    nseorbse_for_yfinance: stockSymbolForPrice["HappeistMind"],
+    nseorbse_for_puppet: stockSymbolForStockData["HappeistMind"],
+    latestearnings: "not accessible",
+    },
+    {
+    particulars: "Easemytrip",
+    purchaseprice: 20,
+    quantity: 1332,
+    portfoliopercentage: "2%",
+    nseorbse_for_yfinance: stockSymbolForPrice["Easemytrip"],
+    nseorbse_for_puppet: stockSymbolForStockData["Easemytrip"],
     latestearnings: "not accessible",
     },
     // ...
@@ -348,7 +375,7 @@ export const sector_wise_summary = [
     },
     {
         name: "others",
-        stocksIncluded: ["Clean Science", "Deepak Nitrite", "Fine Organic","Gravita", "SBI Life"],
+        stocksIncluded: ["Clean Science", "Deepak Nitrite", "Fine Organic","Gravita", "SBI Life", "Infy", "Happeist Mind", "Easemytrip"],
         investment: 70,
         presentValue: 10,
         gainorloss: 10
