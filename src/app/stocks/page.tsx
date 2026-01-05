@@ -106,6 +106,10 @@ export default function TanstackTableClient() {
                 <h2 className="pb-2 text-blue-600">NSE/BSE Stock Informations</h2>
                 <p className="pb-3 text-blue-300">Table Data</p>
                 <DataTable columns={columns} data={finalData}/>
+                <div className="w-full">
+                  <span className="text-right block text-sm text-blue-500 italic">Note: CMP value '0' in a table entry means network error in fetching, '1' means loading</span>
+                </div>
+                <span></span>
               </div>
               <div>
                 <h2 className="pb-2 text-blue-600">Sector Wise Summary of the Stocks</h2>
